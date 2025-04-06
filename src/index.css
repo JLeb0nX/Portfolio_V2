@@ -13,5 +13,34 @@ code {
     monospace;
 }
 
+/* Exemple de media queries pour les téléphones */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .button-group a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+
+  .sidebar {
+    display: none; /* Masquer la sidebar sur les petits écrans */
+  }
+
+  .star-canvas {
+    display: none; /* Masquer le canvas sur les petits écrans */
+  }
+}
+
 @import "leaflet/dist/leaflet.css";
 @import "~@fortawesome/fontawesome-free/css/all.css";
