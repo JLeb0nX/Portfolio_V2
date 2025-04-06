@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Home.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import gif from "../images/accueil.gif"
 
 const Home = () => {
     const [animate, setAnimate] = useState(false);
@@ -64,16 +65,16 @@ const Home = () => {
                     <a href="#contact" className="contact-button">Me contacter</a>
                 </div>
                 <div className="social-buttons home-item">
-                    <a href="https://github.com/votre-profil" target="_blank" rel="noopener noreferrer" className="social-button">
+                    <a href="https://github.com/JLeb0nX/" target="_blank" rel="noopener noreferrer" className="social-button">
                         <FaGithub size={30} />
                     </a>
-                    <a href="https://linkedin.com/in/votre-profil" target="_blank" rel="noopener noreferrer" className="social-button">
+                    <a href="https://www.linkedin.com/in/johan-lebon-5a00712a5/" target="_blank" rel="noopener noreferrer" className="social-button">
                         <FaLinkedin size={30} />
                     </a>
                 </div>
             </div>
             <div className="sidebar">
-                <img src="/accueil.gif" alt="Cybersecurity Expert" className="cybersecurity-gif" />
+                <img src={gif} alt="Gif d'accueil" className="cybersecurity-gif" />
             </div>
         </section>
     );
