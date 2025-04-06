@@ -40,6 +40,19 @@ code {
   .star-canvas {
     display: none; /* Masquer le canvas sur les petits écrans */
   }
+
+  .home-item {
+    margin-bottom: 20px;
+  }
+
+  .animated-text {
+    font-size: 1.2rem;
+  }
+
+  .contact-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }
 
 @import "leaflet/dist/leaflet.css";
