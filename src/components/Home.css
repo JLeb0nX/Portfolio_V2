@@ -1,0 +1,233 @@
+/* Home Section */
+.home {
+    height: 100vh; /* Pleine hauteur de l'écran */
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    justify-content: flex-start; /* Aligner à gauche */
+    padding-left: 120px; /* Espacement à gauche pour tout le contenu */
+    text-align: left; /* Le texte sera aligné à gauche */
+    background-color: rgb(40, 2, 44); /* Violet foncé */
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Effet de fond quadrillé */
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px; /* Taille des carrés */
+    z-index: 1;
+}
+
+.star-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Derrière le contenu */
+}
+
+/* Style du contenu de la page */
+.home-content {
+    position: relative;
+    z-index: 1; /* Assurer que le texte soit au-dessus du fond */
+    color: rgba(183, 19, 202, 0.91); /* Couleur de texte en violet */
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+/* Animation séquentielle des éléments de la page d'accueil */
+.home-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Apparition avec un délai */
+.home.animate .home-item:nth-child(1) { transition-delay: 0.2s; }
+.home.animate .home-item:nth-child(2) { transition-delay: 0.4s; }
+.home.animate .home-item:nth-child(3) { transition-delay: 0.6s; }
+.home.animate .home-item:nth-child(4) { transition-delay: 0.8s; }
+.home.animate .home-item:nth-child(5) { transition-delay: 1s; }
+.home.animate .home-item:nth-child(6) { transition-delay: 1.2s; } /* Bouton GitHub */
+.home.animate .home-item:nth-child(7) { transition-delay: 1.4s; } /* Bouton LinkedIn */
+
+
+/* Quand la page d'accueil apparaît, les éléments aussi */
+.home.animate .home-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animated-text {
+    font-size: 2rem; /* Augmentation de la taille de la police */
+    color: white;
+    margin-bottom: 40px; /* Augmentation de l'espacement en bas */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.animated-text:hover {
+    transform: scale(1.1);
+    color: #b713ca;
+}
+
+/* Style pour le prénom "Johan" */
+.first-name {
+    color: rgba(183, 19, 202, 0.91); /* Couleur violet */
+    font-size: 3.5rem; /* Taille plus grande */
+}
+
+/* Style pour le nom "Lebon" */
+.last-name {
+    color: white; /* Couleur blanche */
+    font-size: 3.5rem; /* Taille encore plus grande */
+}
+
+/* Style pour la décoration */
+.decoration {
+    width: 100px;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(183, 19, 202, 0.91), rgba(255, 255, 255, 0.91));
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Animation pour le texte "Étudiant en réseaux et télécommunications" */
+.typing-animation {
+    font-family: Arial, sans-serif; /* Police sans-serif */
+    font-size: 1.5rem; /* Taille plus petite pour le texte */
+    color: white; /* Couleur du texte */
+    border-right: 2px solid white; /* Curseur clignotant */
+    white-space: nowrap; /* Empêcher le texte de passer à la ligne */
+    overflow: hidden; /* Masquer le texte qui dépasse */
+    animation: typing 4s steps(40, end) 1s forwards, erase 4s steps(40, end) 5s forwards, blink-caret 0.75s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Animation de saisie */
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+}
+
+/* Animation d'effacement */
+@keyframes erase {
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+/* Animation de clignotement du curseur */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+}
+
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #b713ca;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.animated-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.animated-button:hover::before {
+    left: 100%;
+}
+
+.animated-button:hover {
+    background-color: #b713ca;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+}
+
+.contact-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b713ca;
+    background-color: #fff;
+    border: 2px solid #b713ca;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.contact-button:hover {
+    background-color: #b713ca;
+    color: #fff;
+}
+
+.sidebar {
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.cybersecurity-gif {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 20px; /* Espacement entre les boutons */
+    margin-top: 20px; /* Espacement au-dessus des boutons */
+    justify-content: flex-start; /* Aligner les boutons à gauche */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(183, 19, 202); /* Couleur violet */
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-button:hover {
+    transform: translateY(-5px); /* Animation flottante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+}

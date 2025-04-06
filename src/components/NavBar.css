@@ -1,0 +1,116 @@
+/* Style de la navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0); /* transparent */
+    padding: 10px 20px;
+    z-index: 100;
+    opacity: 0; /* Ajout de l'effet de fondu */
+    transition: top 0.8s ease-out, opacity 0.8s ease-out, background-color 0.3s ease;
+}
+
+/* Affichage de la navbar avec animation */
+.navbar.show {
+    top: 0; /* Descend en position normale */
+    opacity: 1; /* Apparition en fondu */
+}
+
+/* Animation séquentielle des éléments */
+.nav-item {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Apparition avec un délai */
+.navbar.show .nav-item:nth-child(1) { transition-delay: 0.2s; }
+.navbar.show .nav-item:nth-child(2) { transition-delay: 0.4s; }
+.navbar.show .nav-item:nth-child(3) { transition-delay: 0.6s; }
+.navbar.show .nav-item:nth-child(4) { transition-delay: 0.8s; }
+.navbar.show .nav-item:nth-child(5) { transition-delay: 1s; }
+
+/* Quand la navbar apparaît, les éléments aussi */
+.navbar.show .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pseudo GitHub à gauche */
+.nav-left .github-link {
+    color: #b713ca;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.4s ease-in-out;
+    margin-left: 90px;
+    position: relative;
+}
+
+.nav-left .github-link:hover {
+    color: #b713ca;
+    text-shadow: 0 0 10px rgb(183, 19, 202),
+    0 0 20px rgb(183, 19, 202),
+    0 0 30px rgb(183, 19, 202);
+}
+
+/* Liste des liens à droite, légèrement décalée vers la gauche */
+.nav-right {
+    margin-right: 70px; /* Ramène un peu vers la gauche */
+}
+
+/* Liste des liens à droite */
+.nav-right .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-right .nav-links li {
+    margin-left: 20px;
+}
+
+.nav-right .nav-links a {
+    color: #b713ca;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Animation de soulignage sur survol */
+.nav-right .nav-links a:hover {
+    color: #b713ca; /* Change la couleur du texte */
+}
+
+/* Pseudo-élément pour le soulignage sous les liens */
+.nav-right .nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #b713ca;
+    transition: width 0.3s ease-in-out; /* Animation fluide */
+    transform: translateX(-50%);
+}
+
+/* Lorsque le lien est survolé, la largeur de ::after passe de 0 à 100% */
+.nav-right .nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Animation de surlignage pour l'élément actif */
+.nav-right .nav-links a.active {
+    color: #b713ca; /* Change la couleur du texte */
+}
+
+.nav-right .nav-links a.active::after {
+    width: 100%; /* Assure que le soulignage est présent pour la section active */
+}

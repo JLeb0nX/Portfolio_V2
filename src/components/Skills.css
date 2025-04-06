@@ -1,0 +1,157 @@
+/* src/components/Skills.css */
+.skills-section {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #28022c;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+/* Effet de fond quadrillé */
+.skills-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 0;
+}
+
+.skills-title {
+    color: #b713ca;
+    font-size: 3rem; /* Taille du titre ajustée */
+    margin-bottom: 20px;
+}
+
+.skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* src/components/Skills.css */
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #b713ca;
+    color: #fff;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(183, 19, 202, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Ajout de la transition */
+    animation: fadeInUp 0.5s ease-in-out, zoomCard 1s infinite alternate; /* Ajout des animations */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: pulseCard 1s infinite, swingCard 1s infinite alternate; /* Animation de pulsation et de balancement au survol */
+    background-color: rgba(0, 0, 0, 0.9); /* Changement de couleur de fond lors du survol */
+}
+
+/* Animation de zoom */
+@keyframes zoomCard {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Animation de balancement */
+@keyframes swingCard {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* src/components/Skills.css */
+.skill-description {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* src/components/Skills.css */
+.skill-button {
+    background-color: #b713ca;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 8px;
+    cursor: default;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Ajout de la transition */
+    animation: pulseButton 1.5s infinite; /* Ajout de l'animation de pulsation */
+}
+
+.skill-button:hover {
+    background-color: #b713ca;
+    transform: scale(1.1); /* Agrandissement au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre au survol */
+}
+
+/* Animation de pulsation */
+@keyframes pulseButton {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.star-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Animation pour les cartes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animation de pulsation */
+@keyframes pulseCard {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
