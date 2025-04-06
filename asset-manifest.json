@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio_V2/static/css/main.8ff41b2e.css",
-    "main.js": "/Portfolio_V2/static/js/main.8aa33c6f.js",
+    "main.js": "/Portfolio_V2/static/js/main.8b09488e.js",
     "static/js/453.2501d07a.chunk.js": "/Portfolio_V2/static/js/453.2501d07a.chunk.js",
+    "static/media/accueil.gif": "/Portfolio_V2/static/media/accueil.b935819c57cc996f9801.gif",
     "static/media/IUTJPO2024-125.JPG": "/Portfolio_V2/static/media/IUTJPO2024-125.0379d4d28ccd2d88615a.JPG",
     "static/media/IUTJPO2024-126.JPG": "/Portfolio_V2/static/media/IUTJPO2024-126.54b0a688fd80b613aa9e.JPG",
     "static/media/CV_Johan_Lebon.pdf": "/Portfolio_V2/static/media/CV_Johan_Lebon.ffe377980e6b546fb040.pdf",
@@ -27,11 +28,11 @@
     "static/media/fa-v4compatibility.woff2": "/Portfolio_V2/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Portfolio_V2/index.html",
     "main.8ff41b2e.css.map": "/Portfolio_V2/static/css/main.8ff41b2e.css.map",
-    "main.8aa33c6f.js.map": "/Portfolio_V2/static/js/main.8aa33c6f.js.map",
+    "main.8b09488e.js.map": "/Portfolio_V2/static/js/main.8b09488e.js.map",
     "453.2501d07a.chunk.js.map": "/Portfolio_V2/static/js/453.2501d07a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ff41b2e.css",
-    "static/js/main.8aa33c6f.js"
+    "static/js/main.8b09488e.js"
   ]
 }
