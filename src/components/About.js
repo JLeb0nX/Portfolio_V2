@@ -116,7 +116,7 @@ const About = () => {
                         </div>
                         <div>
                             <img src={TPTNT} alt="Image 3" className="image-animated" />
-                            <p className="legend">Réalisation d'un TP d'une mise en place de la TNT</p>
+                            <p className="legend">Réalisation d'un TP de la mise en place de la TNT</p>
                         </div>
                     </Carousel>
                 </div>
