@@ -11,8 +11,6 @@
     overflow: hidden;
 }
 
-
-
 /* Effet de fond quadrillé */
 .home::before {
     content: "";
@@ -61,7 +59,6 @@
 .home.animate .home-item:nth-child(5) { transition-delay: 1s; }
 .home.animate .home-item:nth-child(6) { transition-delay: 1.2s; } /* Bouton GitHub */
 .home.animate .home-item:nth-child(7) { transition-delay: 1.4s; } /* Bouton LinkedIn */
-
 
 /* Quand la page d'accueil apparaît, les éléments aussi */
 .home.animate .home-item {
@@ -230,4 +227,104 @@
 .social-button:hover {
     transform: translateY(-5px); /* Animation flottante */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+/* Empêcher le défilement horizontal */
+body, html {
+    overflow-x: hidden;
+}
+
+/* Media queries pour les téléphones */
+@media (max-width: 768px) {
+    .navbar {
+        height: 50px; /* Réduire la hauteur de la navbar */
+        font-size: 0.8rem; /* Réduire la taille de la police de la navbar */
+        text-align: center; /* Centrer le contenu de la navbar */
+        padding: 0 10px; /* Réduire le padding */
+    }
+
+    .nav-left .github-link {
+        margin-left: 10px; /* Réduire la marge à gauche */
+        font-size: 1rem; /* Réduire la taille de la police */
+    }
+
+    .nav-right {
+        margin-right: 10px; /* Réduire la marge à droite */
+    }
+
+    .nav-right .nav-links {
+        flex-direction: column; /* Empiler les liens verticalement */
+        align-items: center; /* Centrer les liens */
+    }
+
+    .nav-right .nav-links li {
+        margin-left: 0; /* Supprimer la marge à gauche */
+        margin-bottom: 10px; /* Ajouter une marge en bas */
+    }
+
+    .nav-right .nav-links a {
+        font-size: 1rem; /* Réduire la taille de la police */
+    }
+
+    .home {
+        padding-left: 20px; /* Réduire l'espacement à gauche */
+        justify-content: center; /* Centrer le contenu */
+        text-align: center; /* Centrer le texte */
+        overflow-x: hidden; /* Empêcher le débordement horizontal */
+    }
+
+    .sidebar {
+        display: none; /* Masquer la sidebar sur les petits écrans */
+    }
+
+    .home-content {
+        width: 100%; /* Assurer que la largeur est de 100% */
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .button-group {
+        flex-direction: column; /* Empiler les boutons verticalement */
+        width: 100%;
+    }
+
+    .button-group a {
+        width: 100%; /* Assurer que la largeur est de 100% */
+        margin: 10px 0;
+    }
+
+    .social-buttons {
+        justify-content: center; /* Centrer les boutons sociaux */
+        width: 100%;
+    }
+
+    .star-canvas {
+        display: none; /* Masquer le canvas sur les petits écrans */
+    }
+
+    .home-item {
+        margin-bottom: 20px;
+        width: 100%; /* Assurer que la largeur est de 100% */
+    }
+
+    .animated-text {
+        font-size: 1.2rem; /* Réduire la taille de la police */
+    }
+
+    .contact-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 100%; /* Assurer que la largeur est de 100% */
+    }
+
+    .cybersecurity-gif {
+        width: 100%; /* Assurer que l'image prend toute la largeur */
+        height: auto;
+    }
+
+    .typing-animation {
+        font-size: 1rem; /* Réduire la taille de la police pour l'animation */
+    }
 }

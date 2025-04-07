@@ -114,3 +114,36 @@
 .nav-right .nav-links a.active::after {
     width: 100%; /* Assure que le soulignage est présent pour la section active */
 }
+
+/* Media queries pour les téléphones */
+@media (max-width: 768px) {
+    .navbar {
+        height: 50px; /* Réduire la hauteur de la navbar */
+        font-size: 0.8rem; /* Réduire la taille de la police de la navbar */
+        text-align: center; /* Centrer le contenu de la navbar */
+        padding: 0 10px; /* Réduire le padding */
+    }
+
+    .nav-left .github-link {
+        margin-left: 10px; /* Réduire la marge à gauche */
+        font-size: 1rem; /* Réduire la taille de la police */
+    }
+
+    .nav-right {
+        margin-right: 10px; /* Réduire la marge à droite */
+    }
+
+    .nav-right .nav-links {
+        flex-direction: column; /* Empiler les liens verticalement */
+        align-items: center; /* Centrer les liens */
+    }
+
+    .nav-right .nav-links li {
+        margin-left: 0; /* Supprimer la marge à gauche */
+        margin-bottom: 10px; /* Ajouter une marge en bas */
+    }
+
+    .nav-right .nav-links a {
+        font-size: 1rem; /* Réduire la taille de la police */
+    }
+}

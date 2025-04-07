@@ -1,0 +1,51 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px; /* Augmente la largeur maximale */
+    width: 100%;
+    position: relative;
+    color: #fff; /* Couleur du texte */
+    max-height: 80vh; /* Limite la hauteur du modal */
+    overflow-y: auto; /* Ajoute le défilement vertical */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Image de fond avec dégradé */
+    background-size: cover; /* Couvre tout le modal */
+    background-position: center; /* Centre l'image */
+}
+
+.modal-content.hiddenkey {
+    background-color: #b713ca; /* Couleur de fond pour HiddenKey */
+}
+
+.modal-content.reseau-securise {
+    background-color: #1a73e8; /* Couleur de fond pour Réseau Sécurisé */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin-top: 20px;
+}
+
+/* Bloque le défilement de la page entière */
+.body-no-scroll {
+    overflow: hidden;
+}
