@@ -54,7 +54,7 @@ const Contact = () => {
 
     const onSubmit = async (data) => {
         try {
-            const response = await fetch('http://localhost:3001/send-email', {
+            const response = await fetch('send_email.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -62,11 +62,8 @@ const Contact = () => {
                 body: JSON.stringify(data)
             });
 
-            if (response.ok) {
-                alert('Email envoyé avec succès !');
-            } else {
-                alert('Erreur lors de l\'envoi de l\'email.');
-            }
+            const result = await response.json();
+            alert(result.message);
         } catch (error) {
             console.error('Erreur:', error);
             alert('Erreur lors de l\'envoi de l\'email.');
