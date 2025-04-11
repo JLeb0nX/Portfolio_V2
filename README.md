@@ -29,7 +29,7 @@ Bienvenue sur mon portfolio en ligne ! Je suis **Johan Lebon**, étudiant en 2�
 ## 🤝 Me contacter
 
 📬 **Mail** : johan.lebon@rt-iut.re  
-💼 **LinkedIn** : [linkedin.com/in/johanlebon](https://www.linkedin.com/in/johanlebon)  
+💼 **LinkedIn** : [linkedin.com/in/johanlebon](https://www.linkedin.com/in/johan-lebon-5a00712a5/)  
 🐙 **GitHub** : [github.com/Jleb0nX](https://github.com/Jleb0nX)
 
 ---
