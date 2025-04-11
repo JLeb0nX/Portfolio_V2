@@ -26,28 +26,6 @@ Bienvenue sur mon portfolio en ligne ! Je suis **Johan Lebon**, étudiant en 2�
 
 ---
 
-## 🧠 Projets phares
-
-| 🛠️ Projet | 🔍 Description |
-|----------|----------------|
-| `🔓 AI-CTF-Bot` | Développement d’une IA pour résoudre des challenges CTF (en cours) |
-| `📡 QPSK Transceiver` | Transmission d’un message QPSK via ADALM-PLUTO sur MATLAB |
-| `🕸️ WordPress Vuln` | Exploitation d’une faille WordPress avec reverse shell |
-| `🧪 Malware Lab` | Génération et déploiement d’un payload Meterpreter |
-
-➡️ Tous mes projets sont disponibles dans l’onglet **Repositories**.
-
----
-
-## 🚀 Objectifs 2025
-
-- 🎯 Intégrer une structure en cybersécurité pour mon stage
-- 📈 Contribuer à des projets open source dans le domaine de la sécu
-- 🧠 Continuer à apprendre React et approfondir l’IA appliquée à la sécu
-- 🏆 Participer à plus de **CTF** en solo ou en équipe
-
----
-
 ## 🤝 Me contacter
 
 📬 **Mail** : johan.lebon.pro@gmail.com  
