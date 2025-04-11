@@ -1,71 +1,59 @@
-# Getting Started with Create React App
+# 👨‍💻 Johan Lebon — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur mon portfolio en ligne ! Je suis **Johan Lebon**, étudiant en 2ᵉ année de BUT Réseaux & Télécommunications, passionné par la **cybersécurité**, l'**intelligence artificielle** et les **technologies réseau**. Ce site a été créé pour partager mes projets, compétences et ambitions professionnelles.
 
-## Available Scripts
+🔗 **Accès rapide** : [🌐 johan-lebon.re](https://johan-lebon.re)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌟 À propos de moi
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🎓 Étudiant en cybersécurité à l’IUT de La Réunion  
+🛡️ Spécialisé en **sécurité offensive**, **analyse de vulnérabilités** et **pentesting**  
+🚀 En quête d’opportunités pour relever des **challenges CTF**, stages ou projets innovants  
+🎮 Fan de **FIFA**, de défis techniques et de jeux d’équipe  
+📍 Actuellement basé à La Réunion
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 💼 Compétences
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔐 **Cybersécurité** : CTF, Metasploit, LLMNR, Responder, Hashcat, reverse shell
+- 🌐 **Réseaux** : OSPF, VLAN, Cisco, Wireshark, SDN
+- 💾 **Systèmes** : Windows Server, Debian, Kali Linux, Active Directory
+- ⚙️ **Dév & Script** : Bash, PowerShell, Python
+- 💻 **Web & UI** : HTML, CSS, React.js, GitHub Pages
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🧠 Projets phares
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| 🛠️ Projet | 🔍 Description |
+|----------|----------------|
+| `🔓 AI-CTF-Bot` | Développement d’une IA pour résoudre des challenges CTF (en cours) |
+| `📡 QPSK Transceiver` | Transmission d’un message QPSK via ADALM-PLUTO sur MATLAB |
+| `🕸️ WordPress Vuln` | Exploitation d’une faille WordPress avec reverse shell |
+| `🧪 Malware Lab` | Génération et déploiement d’un payload Meterpreter |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+➡️ Tous mes projets sont disponibles dans l’onglet **Repositories**.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Objectifs 2025
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 🎯 Intégrer une structure en cybersécurité pour mon stage
+- 📈 Contribuer à des projets open source dans le domaine de la sécu
+- 🧠 Continuer à apprendre React et approfondir l’IA appliquée à la sécu
+- 🏆 Participer à plus de **CTF** en solo ou en équipe
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🤝 Me contacter
 
-## Learn More
+📬 **Mail** : johan.lebon.pro@gmail.com  
+💼 **LinkedIn** : [linkedin.com/in/johanlebon](https://www.linkedin.com/in/johanlebon)  
+🐙 **GitHub** : [github.com/Jleb0nX](https://github.com/Jleb0nX)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Portfolio_V2
+> Ce portfolio est en constante évolution. Merci pour votre visite ! 😄
